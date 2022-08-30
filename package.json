@@ -18,8 +18,9 @@
   ],
   "main": "./dist/js/luge.esm.js",
   "scripts": {
-    "dev": "gulp dev --gulpfile build/gulpfile.js",
-    "build": "gulp --gulpfile build/gulpfile.js"
+    "watch": "gulp dev --gulpfile build/gulpfile.js",
+    "build": "gulp --gulpfile build/gulpfile.js",
+    "dev": "npm run build && serve src"
   },
   "test": "exit 0",
   "devDependencies": {
@@ -46,6 +47,7 @@
   },
   "dependencies": {
     "bowser": "^2.11.0",
+    "serve": "^14.0.1",
     "whatwg-fetch": "^3.6.2"
   }
 }
