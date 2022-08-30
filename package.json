@@ -20,7 +20,7 @@
   "scripts": {
     "watch": "gulp dev --gulpfile build/gulpfile.js",
     "build": "gulp --gulpfile build/gulpfile.js",
-    "dev": "npm run build && serve src"
+    "dev": "vite dev"
   },
   "test": "exit 0",
   "devDependencies": {
@@ -43,8 +43,9 @@
     "gulp-sass-glob": "^1.1.0",
     "node-sass": "^7.0.1",
     "rollup": "^2.52.3",
-    "serve": "^14.0.1",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "path": "^0.12.7",
+    "vite": "^3.0.9"
   },
   "dependencies": {
     "bowser": "^2.11.0",
